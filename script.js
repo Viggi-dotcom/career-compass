@@ -1,4 +1,3 @@
-// Career paths with comprehensive details and guidance
 const CAREERS = {
   eng: {
     title: "Engineering",
@@ -278,3 +277,4 @@ document.getElementById(
 document.querySelector(
   "footer"
 ).textContent = `© ${new Date().getFullYear()} Career Compass — Guiding Your Future`;
+
