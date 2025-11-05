@@ -17,4 +17,4 @@ A modern career guidance website helping students explore different career paths
 - Responsive Design
 
 ## Preview
-Visit the live site: [Career Compass]([https://your-username.github.io/career-compass](https://viggi-dotcom.github.io/career-compass/))
+Visit the live site: [Career Compass](https://viggi-dotcom.github.io/career-compass/)
