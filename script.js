@@ -269,13 +269,12 @@ function copyInfo(key) {
 }
 
 // initial hero image
-document.getElementById(
-  "heroImg"
-).style.backgroundImage = `url('${CAREERS.it.img}')`;
+
 
 // set year
 document.querySelector(
   "footer"
 ).textContent = `© ${new Date().getFullYear()} Career Compass — Guiding Your Future`;
+
 
 
