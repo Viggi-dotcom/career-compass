@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Career Compass — Guiding Your Future</title>
+  <meta name="description" content="Career Compass: career awareness website to explore career paths, courses and skills." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">CC</div>
+        <div>
+          <div style="font-weight:800">Career Compass</div>
+          <div style="font-size:13px;color:var(--muted)">Guiding your future</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#paths">Paths</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#courses">Courses</a>
+        <a href="#guide">Guidance</a>
+        <a class="cta" href="#contact">Get Help</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div>
+        <h1>Discover Your Perfect Career Path</h1>
+        <div class="typing" id="typing"></div>
+        <p>Feeling confused about your career? We've got you covered! Explore different paths, understand what it takes to succeed, and find the perfect fit for your future.</p>
+        <div class="hero-buttons">
+          <a class="explore-btn" href="#paths">Explore Careers <span class="arrow">→</span></a>
+          <a class="secondary-btn" href="#engineering">Engineering Guide</a>
+        </div>
+        <div class="hero-features">
+          <div class="feature">
+            <span class="feature-icon">📚</span>
+            <span>Detailed Course Info</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">💡</span>
+            <span>Expert Guidance</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🎯</span>
+            <span>Career Roadmaps</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="heroImg" class="hero-visual" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80')"></div>
+      </div>
+    </section>
+
+    <section id="paths" style="margin-top:22px">
+      <h2 style="margin:0 0 12px 0">Explore Career Paths</h2>
+      <div class="grid-container">
+        <div class="grid" id="cards">
+        <!-- existing 6 + 4 new cards -->
+        <article class="card" data-key="it">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Information Technology 👨‍💻</h3><p>Programming, web development, AI, data science, and cybersecurity.</p></div>
+          <div class="tag">Tech</div>
+        </article>
+
+        <article class="card" data-key="health">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Healthcare 🩺</h3><p>Medicine, nursing, physiotherapy and lab sciences.</p></div>
+          <div class="tag">Health</div>
+        </article>
+
+        <article class="card" data-key="design">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1547333101-6bb18e609b2f?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Arts & Design 🎨</h3><p>Graphic design, animation, fine arts, UX/UI — for creative minds.</p></div>
+          <div class="tag">Creative</div>
+        </article>
+
+        <article class="card" data-key="business">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Business & Management 💼</h3><p>Management, marketing, finance, and entrepreneurship.</p></div>
+          <div class="tag">Biz</div>
+        </article>
+
+        <article class="card" data-key="law">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Law & Civil Services ⚖️</h3><p>Legal careers and public service for those who want to shape policy.</p></div>
+          <div class="tag">Law</div>
+        </article>
+
+        <article class="card" data-key="eng">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Engineering ⚙️</h3><p>Mechanical, civil, electrical, electronics, and more.</p></div>
+          <div class="tag">Eng</div>
+        </article>
+
+        <!-- NEW: AI & Robotics -->
+        <article class="card" data-key="ai">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>AI & Robotics 🤖</h3><p>Machine learning, robotics, automation, and intelligent systems.</p></div>
+          <div class="tag">AI</div>
+        </article>
+
+        <!-- NEW: Education & Teaching -->
+        <article class="card" data-key="education">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Education & Teaching 🧑‍🏫</h3><p>Teaching, curriculum development, training and educational leadership.</p></div>
+          <div class="tag">Edu</div>
+        </article>
+
+        <!-- NEW: Media & Communication -->
+        <article class="card" data-key="media">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Media & Communication 🎬</h3><p>Journalism, film, broadcasting, social media, and content creation.</p></div>
+          <div class="tag">Media</div>
+        </article>
+
+        <!-- NEW: Psychology & Social Work -->
+        <article class="card" data-key="psych">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card-body"><h3>Psychology & Social Work 🧠</h3><p>Mental health, counseling, community work and social services.</p></div>
+          <div class="tag">Soc</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="engineering" class="engineering-section">
+      <h2>Engineering Career Guide</h2>
+      <div class="eng-grid">
+        <div class="eng-card">
+          <h3>Path after 10th Standard</h3>
+          <ul>
+            <li>Complete 11th & 12th with PCM (Physics, Chemistry, Mathematics)</li>
+            <li>Focus on NCERT books thoroughly</li>
+            <li>Start JEE/CET preparation early</li>
+            <li>Join coaching if needed</li>
+            <li>Practice previous year papers</li>
+          </ul>
+        </div>
+
+        <div class="eng-card">
+          <h3>Entrance Exams</h3>
+          <ul>
+            <li><strong>JEE Main:</strong> National level exam for NITs, IIITs</li>
+            <li><strong>JEE Advanced:</strong> For IITs (top 2.5 lakh JEE Main qualifiers)</li>
+            <li><strong>State CET:</strong> For state engineering colleges</li>
+            <li><strong>BITSAT:</strong> For BITS Pilani campuses</li>
+            <li><strong>VITEEE:</strong> For VIT University</li>
+          </ul>
+        </div>
+
+        <div class="eng-card">
+          <h3>Popular Branches</h3>
+          <ul>
+            <li>Computer Science Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Electrical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Electronics & Communication</li>
+            <li>Chemical Engineering</li>
+          </ul>
+        </div>
+
+        <div class="eng-card">
+          <h3>Career Opportunities</h3>
+          <ul>
+            <li>Software Development</li>
+            <li>System Design</li>
+            <li>Construction Management</li>
+            <li>Industrial Design</li>
+            <li>Research & Development</li>
+            <li>Higher Studies (M.Tech/MBA)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exam-prep">
+        <h3>Exam Preparation Tips</h3>
+        <div class="tip-grid">
+          <div class="prep-tip">
+            <h4>JEE Main & Advanced</h4>
+            <p>Start preparation in 11th standard. Focus on NCERT books first, then move to advanced references. Practice daily problems and take mock tests regularly.</p>
+          </div>
+          <div class="prep-tip">
+            <h4>State CET</h4>
+            <p>Focus on state board syllabus along with CET specific topics. Previous year papers are crucial. Time management is key during the exam.</p>
+          </div>
+          <div class="prep-tip">
+            <h4>Study Resources</h4>
+            <p>NCERT Books, Reference books (HC Verma, RD Sharma), Online platforms (Khan Academy, Unacademy), Previous year papers, Mock tests</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="courses">
+      <div>
+        <h3 style="margin-top:0">Courses & Skills</h3>
+        <div class="course"><strong>B.Tech / B.E.</strong><div style="color:var(--muted);margin-top:6px">Engineering disciplines — strong math & physics foundation. Duration: 4 years</div></div>
+        <div class="course" style="margin-top:10px"><strong>BCA</strong><div style="color:var(--muted);margin-top:6px">Computer applications, programming basics. Duration: 3 years</div></div>
+        <div class="course" style="margin-top:10px"><strong>MBBS</strong><div style="color:var(--muted);margin-top:6px">Medical degree — requires NEET (India). Duration: 5.5 years</div></div>
+      </div>
+      <aside style="padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);">
+        <h4 style="margin:0">Top Skills Employers Want</h4>
+        <ul style="color:var(--muted);margin-top:8px;padding-left:18px">
+          <li>Communication & Teamwork</li>
+          <li>Problem-solving & Critical Thinking</li>
+          <li>Digital literacy (coding, data tools)</li>
+          <li>Adaptability & Continuous Learning</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="guide" class="guidance">
+      <div class="tip">
+        <h3>How to choose a career</h3>
+        <ol style="color:var(--muted);margin-top:8px;padding-left:18px">
+          <li>List what you enjoy and what you’re good at.</li>
+          <li>Match skills to career fields (try short courses).</li>
+          <li>Do internships to test interest.</li>
+          <li>Talk to mentors and keep learning.</li>
+        </ol>
+      </div>
+      <div class="tip">
+        <h3>Advice for parents & teachers</h3>
+        <p style="color:var(--muted);margin-top:8px">Encourage exploration, not pressure. Support skill-building activities and celebrate small wins.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Get Personalized Help</h3>
+      <form id="contactForm">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+          <input id="name" placeholder="Your name" required />
+          <input id="email" type="email" placeholder="Email" required />
+        </div>
+        <div style="margin-top:10px">
+          <select id="field">
+            <option value="">Interested field (optional)</option>
+            <option value="it">Information Technology</option>
+            <option value="health">Healthcare</option>
+            <option value="design">Arts & Design</option>
+            <option value="business">Business</option>
+            <option value="law">Law & Civil Services</option>
+            <option value="eng">Engineering</option>
+            <option value="ai">AI & Robotics</option>
+            <option value="education">Education & Teaching</option>
+            <option value="media">Media & Communication</option>
+            <option value="psych">Psychology & Social Work</option>
+          </select>
+        </div>
+        <div style="margin-top:10px">
+          <textarea id="message" placeholder="Tell us how we can help"></textarea>
+        </div>
+        <div class="submit" style="margin-top:10px"><button type="submit" class="primary">Send Message</button></div>
+      </form>
+    </section>
+
+    <footer>© 2025 Career Compass — Guiding Your Future</footer>
+  </div>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <header><h2 id="modalTitle">Title</h2><button class="close" id="modalClose">Close</button></header>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  
+  <!-- Load script at the end of body -->
+  <script src="script.js"></script>
+</body>
+</html>
