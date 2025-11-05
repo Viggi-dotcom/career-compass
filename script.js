@@ -149,7 +149,7 @@ function openCareer(key) {
   
   modal.classList.add("show");
   modal.setAttribute("aria-hidden", "false");
-  document.getElementById("heroImg").style.backgroundImage = `url('${c.img}')`;
+
   
   // Animate sections
   setTimeout(() => {
@@ -277,4 +277,5 @@ document.getElementById(
 document.querySelector(
   "footer"
 ).textContent = `© ${new Date().getFullYear()} Career Compass — Guiding Your Future`;
+
 
